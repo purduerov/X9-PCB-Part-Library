@@ -326,10 +326,10 @@ Height: 7.70mm</description>
 <wire x1="-5.11" y1="-2.8" x2="-5.11" y2="2.8" width="0.127" layer="51"/>
 </package>
 <package name="KEYSTONE_FUSE_3587">
-<smd name="P$1" x="-6.731" y="3.1623" dx="1.5748" dy="2.8194" layer="1"/>
-<smd name="P$2" x="-6.731" y="-3.1623" dx="1.5748" dy="2.8194" layer="1"/>
-<smd name="P$3" x="6.731" y="-3.1623" dx="1.5748" dy="2.8194" layer="1"/>
-<smd name="P$4" x="6.731" y="3.1623" dx="1.5748" dy="2.8194" layer="1"/>
+<smd name="P$1" x="-6.731" y="3.0353" dx="1.5748" dy="2.8194" layer="1"/>
+<smd name="P$2" x="-6.731" y="-3.0353" dx="1.5748" dy="2.8194" layer="1"/>
+<smd name="P$3" x="6.731" y="-3.0353" dx="1.5748" dy="2.8194" layer="1"/>
+<smd name="P$4" x="6.731" y="3.0353" dx="1.5748" dy="2.8194" layer="1"/>
 <wire x1="-8.89" y1="5.08" x2="8.89" y2="5.08" width="0.127" layer="21"/>
 <wire x1="8.89" y1="5.08" x2="8.89" y2="-5.08" width="0.127" layer="21"/>
 <wire x1="8.89" y1="-5.08" x2="-8.89" y2="-5.08" width="0.127" layer="21"/>
