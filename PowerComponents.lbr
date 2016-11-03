@@ -325,16 +325,6 @@ Height: 7.70mm</description>
 <wire x1="5.11" y1="-2.8" x2="-5.11" y2="-2.8" width="0.127" layer="51"/>
 <wire x1="-5.11" y1="-2.8" x2="-5.11" y2="2.8" width="0.127" layer="51"/>
 </package>
-<package name="KEYSTONE_FUSE_3587">
-<smd name="P$1" x="-6.731" y="3.0353" dx="1.5748" dy="2.8194" layer="1"/>
-<smd name="P$2" x="-6.731" y="-3.0353" dx="1.5748" dy="2.8194" layer="1"/>
-<smd name="P$3" x="6.731" y="-3.0353" dx="1.5748" dy="2.8194" layer="1"/>
-<smd name="P$4" x="6.731" y="3.0353" dx="1.5748" dy="2.8194" layer="1"/>
-<wire x1="-8.89" y1="5.08" x2="8.89" y2="5.08" width="0.127" layer="21"/>
-<wire x1="8.89" y1="5.08" x2="8.89" y2="-5.08" width="0.127" layer="21"/>
-<wire x1="8.89" y1="-5.08" x2="-8.89" y2="-5.08" width="0.127" layer="21"/>
-<wire x1="-8.89" y1="-5.08" x2="-8.89" y2="5.08" width="0.127" layer="21"/>
-</package>
 </packages>
 <symbols>
 <symbol name="SWITCHMODE_SCHOTTKY">
@@ -446,12 +436,6 @@ Height: 7.70mm</description>
 <text x="2.54" y="2.032" size="1.27" layer="97">VOUT</text>
 <text x="-1.524" y="5.842" size="1.27" layer="95">AP117</text>
 <text x="2.54" y="-5.08" size="1.27" layer="95">&gt;VALUE</text>
-</symbol>
-<symbol name="FUSE">
-<wire x1="0" y1="0" x2="-2.54" y2="0" width="0.254" layer="94" curve="-180"/>
-<wire x1="0" y1="0" x2="2.54" y2="0" width="0.254" layer="94" curve="-180"/>
-<pin name="P$1" x="-5.08" y="0" visible="off" length="short"/>
-<pin name="P$2" x="5.08" y="0" visible="off" length="short" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -639,22 +623,6 @@ Intermediate DC-DC Bus Converter</description>
 <connects>
 <connect gate="G$1" pin="+" pad="+"/>
 <connect gate="G$1" pin="-" pad="-"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="KEYSTONE_FUSE_3587" prefix="F" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="FUSE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="KEYSTONE_FUSE_3587">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1 P$2"/>
-<connect gate="G$1" pin="P$2" pad="P$3 P$4"/>
 </connects>
 <technologies>
 <technology name=""/>
