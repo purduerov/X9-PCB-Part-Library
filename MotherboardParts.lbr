@@ -390,8 +390,8 @@
 <connect gate="G$1" pin="48V+" pad="P$26 P$27 P$28 P$29 P$30"/>
 <connect gate="G$1" pin="48V-" pad="P$21 P$22 P$23 P$24 P$25"/>
 <connect gate="G$1" pin="ON/OFF" pad="P$51"/>
-<connect gate="G$1" pin="SCL" pad="P$53"/>
-<connect gate="G$1" pin="SDA" pad="P$54"/>
+<connect gate="G$1" pin="SCL" pad="P$54"/>
+<connect gate="G$1" pin="SDA" pad="P$53"/>
 </connects>
 <technologies>
 <technology name=""/>
