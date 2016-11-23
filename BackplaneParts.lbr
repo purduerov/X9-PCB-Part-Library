@@ -90,21 +90,21 @@
 <pad name="P$6" x="-3.7" y="3.3" drill="0.8"/>
 <pad name="P$7" x="-0.7" y="3.3" drill="0.8"/>
 </package>
-<package name="MAX3465CSD">
+<package name="MAX3491">
 <smd name="GND7" x="0" y="0" dx="1.981" dy="0.533" layer="1"/>
 <smd name="GND6" x="0" y="1.27" dx="1.981" dy="0.533" layer="1"/>
 <smd name="DI" x="0" y="2.54" dx="1.981" dy="0.533" layer="1"/>
 <smd name="DE" x="0" y="3.81" dx="1.981" dy="0.533" layer="1"/>
 <smd name="!RE" x="0" y="5.08" dx="1.981" dy="0.533" layer="1"/>
 <smd name="R0" x="0" y="6.35" dx="1.981" dy="0.533" layer="1"/>
-<smd name="SHDN" x="0" y="7.62" dx="1.981" dy="0.533" layer="1"/>
-<smd name="TXP" x="5.9185" y="0" dx="1.981" dy="0.533" layer="1"/>
+<smd name="NC1" x="0" y="7.62" dx="1.981" dy="0.533" layer="1"/>
+<smd name="NC8" x="5.9185" y="0" dx="1.981" dy="0.533" layer="1"/>
 <smd name="Y" x="5.9185" y="1.27" dx="1.981" dy="0.533" layer="1"/>
 <smd name="Z" x="5.9185" y="2.54" dx="1.981" dy="0.533" layer="1"/>
 <smd name="B" x="5.9185" y="3.81" dx="1.981" dy="0.533" layer="1"/>
 <smd name="A" x="5.9185" y="5.08" dx="1.981" dy="0.533" layer="1"/>
-<smd name="RXP" x="5.9185" y="6.35" dx="1.981" dy="0.533" layer="1"/>
-<smd name="VCC" x="5.9185" y="7.62" dx="1.981" dy="0.533" layer="1"/>
+<smd name="VCC13" x="5.9185" y="6.35" dx="1.981" dy="0.533" layer="1"/>
+<smd name="VCC14" x="5.9185" y="7.62" dx="1.981" dy="0.533" layer="1"/>
 <wire x1="-0.1" y1="8.1" x2="-0.1" y2="-0.5" width="0.127" layer="20"/>
 <wire x1="-0.1" y1="-0.5" x2="5.9" y2="-0.5" width="0.127" layer="20"/>
 <wire x1="5.9" y1="-0.5" x2="5.9" y2="8.1" width="0.127" layer="20"/>
@@ -137,25 +137,23 @@
 <pin name="5" x="5.08" y="-5.08" length="middle" rot="R90"/>
 <text x="-5.08" y="5.08" size="1.27" layer="95">&gt;NAME</text>
 </symbol>
-<symbol name="MAX3465CSD">
-<wire x1="-10.16" y1="22.86" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
+<symbol name="MAX3491CSD">
+<wire x1="-10.16" y1="17.78" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-15.24" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-15.24" x2="10.16" y2="22.86" width="0.254" layer="94"/>
-<wire x1="10.16" y1="22.86" x2="-10.16" y2="22.86" width="0.254" layer="94"/>
-<pin name="SHDN" x="-15.24" y="20.32" length="middle"/>
+<wire x1="10.16" y1="-15.24" x2="10.16" y2="17.78" width="0.254" layer="94"/>
+<wire x1="10.16" y1="17.78" x2="-10.16" y2="17.78" width="0.254" layer="94"/>
 <pin name="R0" x="-15.24" y="15.24" length="middle"/>
 <pin name="!RE" x="-15.24" y="10.16" length="middle"/>
 <pin name="DE" x="-15.24" y="5.08" length="middle"/>
 <pin name="DI" x="-15.24" y="0" length="middle"/>
 <pin name="GND6" x="-15.24" y="-5.08" length="middle"/>
 <pin name="GND7" x="-15.24" y="-10.16" length="middle"/>
-<pin name="TXP" x="15.24" y="-10.16" length="middle" rot="R180"/>
-<pin name="Y" x="15.24" y="-5.08" length="middle" rot="R180"/>
-<pin name="Z" x="15.24" y="0" length="middle" rot="R180"/>
-<pin name="B" x="15.24" y="5.08" length="middle" rot="R180"/>
-<pin name="A" x="15.24" y="10.16" length="middle" rot="R180"/>
-<pin name="RXP" x="15.24" y="15.24" length="middle" rot="R180"/>
-<pin name="VCC" x="15.24" y="20.32" length="middle" rot="R180"/>
+<pin name="Y" x="15.24" y="-10.16" length="middle" rot="R180"/>
+<pin name="Z" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="B" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="A" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="VCC13" x="15.24" y="10.16" length="middle" rot="R180"/>
+<pin name="VCC14" x="15.24" y="15.24" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -196,12 +194,12 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="MAX3465CSD">
+<deviceset name="MAX3491">
 <gates>
-<gate name="G$1" symbol="MAX3465CSD" x="-10.16" y="0"/>
+<gate name="G$1" symbol="MAX3491CSD" x="-10.16" y="0"/>
 </gates>
 <devices>
-<device name="" package="MAX3465CSD">
+<device name="" package="MAX3491">
 <connects>
 <connect gate="G$1" pin="!RE" pad="!RE"/>
 <connect gate="G$1" pin="A" pad="A"/>
@@ -211,10 +209,8 @@
 <connect gate="G$1" pin="GND6" pad="GND6"/>
 <connect gate="G$1" pin="GND7" pad="GND7"/>
 <connect gate="G$1" pin="R0" pad="R0"/>
-<connect gate="G$1" pin="RXP" pad="RXP"/>
-<connect gate="G$1" pin="SHDN" pad="SHDN"/>
-<connect gate="G$1" pin="TXP" pad="TXP"/>
-<connect gate="G$1" pin="VCC" pad="VCC"/>
+<connect gate="G$1" pin="VCC13" pad="VCC13"/>
+<connect gate="G$1" pin="VCC14" pad="VCC14"/>
 <connect gate="G$1" pin="Y" pad="Y"/>
 <connect gate="G$1" pin="Z" pad="Z"/>
 </connects>
