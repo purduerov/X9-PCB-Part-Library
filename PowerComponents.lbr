@@ -363,6 +363,9 @@ Height: 7.70mm</description>
 <smd name="P$7" x="2.54" y="5.46" dx="1.27" dy="2.54" layer="1"/>
 <smd name="P$8" x="0" y="5.46" dx="1.27" dy="2.54" layer="1"/>
 </package>
+<package name="16_GUAGE_WIRE">
+<pad name="P$1" x="0" y="0" drill="2.8"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SWITCHMODE_SCHOTTKY">
@@ -500,6 +503,13 @@ Height: 7.70mm</description>
 <pin name="P$6" x="15.24" y="-2.54" length="middle" rot="R180"/>
 <pin name="P$7" x="15.24" y="2.54" length="middle" rot="R180"/>
 <pin name="P$8" x="15.24" y="7.62" length="middle" rot="R180"/>
+</symbol>
+<symbol name="16_GUAGE_HOLE">
+<pin name="P$1" x="-2.54" y="0" length="middle"/>
+<wire x1="0" y1="2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -742,6 +752,21 @@ Intermediate DC-DC Bus Converter</description>
 <connect gate="G$1" pin="P$6" pad="P$6"/>
 <connect gate="G$1" pin="P$7" pad="P$7"/>
 <connect gate="G$1" pin="P$8" pad="P$8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="16_GUAGE_WIRE">
+<gates>
+<gate name="G$1" symbol="16_GUAGE_HOLE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="16_GUAGE_WIRE">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
