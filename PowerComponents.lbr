@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -436,7 +436,7 @@ Height: 7.70mm</description>
 <wire x1="12.7" y1="-33.02" x2="-12.7" y2="-33.02" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="-33.02" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
 <pin name="+VIN" x="-15.24" y="7.62" length="short" direction="pwr"/>
-<pin name="ON/OFF1" x="-15.24" y="-20.32" length="short"/>
+<pin name="ON/!OFF1" x="-15.24" y="-20.32" length="short"/>
 <pin name="-VIN" x="-15.24" y="0" length="short" direction="pwr"/>
 <pin name="-VOUT" x="15.24" y="0" length="short" direction="pwr" rot="R180"/>
 <pin name="+S" x="15.24" y="-5.08" length="short" rot="R180"/>
@@ -445,7 +445,7 @@ Height: 7.70mm</description>
 <pin name="SA1" x="15.24" y="-15.24" length="short" rot="R180"/>
 <pin name="SCL" x="15.24" y="-25.4" length="short" rot="R180"/>
 <pin name="SDA" x="15.24" y="-30.48" length="short" rot="R180"/>
-<pin name="PG" x="-15.24" y="-15.24" length="short"/>
+<pin name="!PG" x="-15.24" y="-15.24" length="short"/>
 <pin name="DGND" x="-15.24" y="-25.4" length="short" direction="pwr"/>
 <pin name="SMBALERT" x="-15.24" y="-10.16" length="short"/>
 <pin name="ON/OFF2" x="-15.24" y="-5.08" length="short"/>
@@ -631,6 +631,7 @@ Intermediate DC-DC Bus Converter</description>
 <devices>
 <device name="" package="BRICK_DC-DC_CONVERTER">
 <connects>
+<connect gate="G$1" pin="!PG" pad="12"/>
 <connect gate="G$1" pin="+S" pad="6"/>
 <connect gate="G$1" pin="+VIN" pad="1"/>
 <connect gate="G$1" pin="+VOUT" pad="16"/>
@@ -638,9 +639,8 @@ Intermediate DC-DC Bus Converter</description>
 <connect gate="G$1" pin="-VIN" pad="4"/>
 <connect gate="G$1" pin="-VOUT" pad="5"/>
 <connect gate="G$1" pin="DGND" pad="13"/>
-<connect gate="G$1" pin="ON/OFF1" pad="2"/>
+<connect gate="G$1" pin="ON/!OFF1" pad="2"/>
 <connect gate="G$1" pin="ON/OFF2" pad="15"/>
-<connect gate="G$1" pin="PG" pad="12"/>
 <connect gate="G$1" pin="SA0" pad="8"/>
 <connect gate="G$1" pin="SA1" pad="9"/>
 <connect gate="G$1" pin="SCL" pad="10"/>
